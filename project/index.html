@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Codificador de Texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/alura.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="esquerda">
+            <img class="logo-alura" src="img/icon_alura_selo.svg" alt="Logotipo Alura">
+            <form>
+                <textarea id="inputText" placeholder="Digite seu texto"></textarea>
+                <div>
+                    <div class="alerta">
+                        <img src="img/achtung.svg" alt="Atenção">
+                        <span>Apenas letras minúsculas e sem acento.</span>
+                    </div>
+                    <div class="botoes">
+                        <button type="button" class="bt-cripto" id="criptografar">Criptografar</button>
+                        <button type="button" class="bt-descripto" id="descriptografar">Descriptografar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="direita">
+            <div class="sem-retorno">
+                <img src="img/lupa.svg" id="mensagem-nao-encontrada" alt="Nenhuma mensagem encontrada!">
+                <h3 class="titulo-sem-retorno">Nenhuma mensagem encontrada!</h3>
+                <p>Digite um texto que você deseja criptografar ou descriptografar:</p>
+            </div>
+            <div class="texto-criptografado d-none">
+                <p id="outputText"></p>
+                <button class="bt-copiar" id="copiar">Copiar</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Desenvolvido por Vinicius Martins 2024</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
